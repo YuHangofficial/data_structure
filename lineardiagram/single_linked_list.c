@@ -21,7 +21,11 @@ Node* initList(){
 
 //插入数据
 //头插法
+<<<<<<< HEAD
 void*insertHead(Node* L,ElemType e)
+=======
+Node*insertHead(Node* L,ElemType e)
+>>>>>>> e3259513e09fc46aaeffe7f7981b7158ddfab382
 {
     Node *p = (Node*)malloc(sizeof(Node));
     p->data = e;
@@ -32,6 +36,7 @@ void*insertHead(Node* L,ElemType e)
     L->next = p;
 }
 
+<<<<<<< HEAD
 //尾插法
 //自己写的，问题在一定要给新节点分配空间
 //否则会出现野指针
@@ -154,6 +159,8 @@ void freeList(Node *L)
     L->next = NULL;
 }
 
+=======
+>>>>>>> e3259513e09fc46aaeffe7f7981b7158ddfab382
 //遍历链表
 void listNode(Node *L)
 {
@@ -168,6 +175,7 @@ void listNode(Node *L)
 
 int main(){
     Node *list = initList();
+<<<<<<< HEAD
     insertHead(list,30);
     insertHead(list,10);
     insertHead(list,20);
@@ -176,3 +184,10 @@ int main(){
     listNode(list);
     return 0;
 }
+=======
+    insertHead(list,10);
+    insertHead(list,20);
+    listNode(list);
+    return 1;
+}
+>>>>>>> e3259513e09fc46aaeffe7f7981b7158ddfab382
