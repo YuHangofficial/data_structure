@@ -13,4 +13,22 @@
 最后输出最先相同的后缀位置
 
 */
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef char ElemType;
+
+typedef struct node{
+    ElemType data;
+    struct node *next;
+}Node;
+
+//初始化链表
+Node* initList()
+{
+    Node *head = (Node*)malloc(sizeof(Node));
+    head->data = 0;
+    head->next = NULL;
+    return head;//返回的是头指针
+}
 
