@@ -26,10 +26,36 @@ typedef struct{
 Seqlist* initList()
 {
     Seqlist *L = (Seqlist*)malloc(sizeof(Seqlist));
+    //创建顺序线性表本身的指针
     L->data = (ElemType*)malloc(sizeof(ElemType) * MAXSIZE);
     L->length = 0;
     return L;
 }
+/*
+int appendList(Seqlist *L,ElemType e)
+{
+    if(L->length >= MAXSIZE){
+        printf("顺序表已满");
+        return 0;
+    }
+    L->data[L->length] = e;
+    L->length++;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 int appendElem(Seqlist *L,ElemType e){
     if (L->length >= MAXSIZE){
